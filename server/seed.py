@@ -22,6 +22,7 @@ with app.app_context():
         bakeries.append(b)
     
     db.session.add_all(bakeries)
+    db.session.commit()
 
     baked_goods = []
     names = []
